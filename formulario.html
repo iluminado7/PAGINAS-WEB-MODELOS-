@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de satisfacción</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+  <h1 id="title">Encuesta de satisfacción</h1>
+  
+  <p id="description">Por favor, tomate unos minutos para completar esta encuesta.</p>
+  
+  <form id="survey-form">
+  
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+    
+    <label for="number">Edad:</label>
+    <input type="number" id="number" name="age" min="18" max="100" placeholder="Ingresa tu edad" required>
+    
+    <label for="dropdown">¿Cómo nos encontraste?</label>
+    <select id="dropdown" name="found-us" required>
+      <option value="" disabled selected>Selecciona una opción</option>
+      <option value="google">Google</option>
+      <option value="amigo">Un amigo</option>
+      <option value="anuncio">Anuncio publicitario</option>
+      <option value="otro">Otro</option>
+    </select>
+    
+    <label id="name-label" for="name">Nombre completo:</label>
+    
+    <label id="email-label" for="email">Correo electrónico:</label>
+    
+    <label id="number-label" for="number">Edad:</label>
+    
+    <fieldset>
+      <legend>¿Te gustó nuestro servicio?</legend>
+      <input type="radio" id="like-yes" name="like" value="yes" required>
+      <label for="like-yes">Sí</label>
+      <input type="radio" id="like-no" name="like" value="no">
+      <label for="like-no">No</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>¿Recomendarías nuestro servicio?</legend>
+      <input type="radio" id="recommend-yes" name="recommend" value="yes" required>
+      <label for="recommend-yes">Sí</label>
+      <input type="radio" id="recommend-no" name="recommend" value="no">
+      <label for="recommend-no">No</label>
+    </fieldset>
+    
+    <label for="checkbox">¿En qué áreas podemos mejorar?</label>
+    <br>
+    <input type="checkbox" id="checkbox-1" name="improvement" value="rapidez">
+    <label for="checkbox-1">Rapidez</label>
+    <br>
+    <input type="checkbox" id="checkbox-2" name="improvement" value="atención">
+    <label for="checkbox-2">Atención al cliente</label>
+    <br>
+    <input type="checkbox" id="checkbox-3" name="improvement" value="precios">
+    <label for="checkbox-3">Precios</label>
+    <br>
+    <input type="checkbox" id="checkbox-4" name="improvement" value="otro">
+    <label for="checkbox-4">Otro</label>
+    
+    <label for="comments">Comentarios:</label>
+    <textarea id="comments" name="comentarios" rows="4" required></textarea><br><br>
+    <input type="submit" id="submit" value="Submit">
+ </form>
+</body>
+</html>
