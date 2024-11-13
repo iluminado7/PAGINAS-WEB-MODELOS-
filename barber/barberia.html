@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="barberia.css">
+  <title>Barber Shop</title>
+  <script src="scroll.js" defer></script>
+</head>
+
+<body>
+  <header id="inicio" class="header">
+    <div class="menu container">
+      <a href="#inicio" class="logo">Logo</a>
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <img src="more.png" class="menu-icon" alt="" style="color: #CF2D3A;">
+      </label>
+      <nav class="nav-bar">
+        <ul>
+          <li><a class="navlink" href="#inicio">Inicio</a></li>
+          <li><a class="navlink" href="#sobre-nosotros">Sobre nosotros</a></li>
+          <li><a class="navlink" href="#servicios">Servicio</a></li>
+          <li><a class="navlink" href="#precios">Precios</a></li>
+          <li><a class="navlink" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-content container">
+      <div class="header-txt">
+        <h1>Barberia</h1>
+        <span>Argentina</span>
+        <p>
+          Te ofrecemos una variedad de servicios de corte de cabello y cuidado de barba. Nuestros estilistas expertos
+          están comprometidos en brindarte una experiencia de cuidado personalizada y de calidad.
+        </p>
+      </div>
+      <div class="header-dir">
+        <div class="dir">
+          <h3>Direccion</h1>
+            <h2>---</h2>
+        </div>
+        <div class="dir">
+          <h3>Telefono</h3>
+          <h2>********</h2>
+        </div>
+        <div class="dir">
+          <h3>Horarios</h3>
+          <h2>----</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="sobre-nosotros" class="sobre-nosotros">
+    <div class="welcome-1"></div>
+    <div class="welcome-2">
+      <h1>Sobre nosotros</h1>
+      <p class="b1">¡Bienvenidos a Barber Shop! Somos una barbería con pasión por el arte del corte de cabello y el
+        cuidado de la
+        barba. Nuestro objetivo es brindarte una experiencia única y de calidad en cada visita.
+        Nuestro equipo de barberos altamente capacitados está comprometido con la excelencia en el servicio al cliente
+        y en la atención personalizada a tus necesidades. Ya sea que estés buscando un corte de cabello clásico, un
+        estilo
+        moderno o un arreglo de barba experto, estamos aquí para ayudarte a lucir y sentirte mejor.
+        Ven y disfruta de un ambiente acogedor y relajante, donde nos esforzamos por brindarte no solo un gran corte de
+        cabello, sino también una experiencia memorable. ¡Esperamos verte pronto en Barber Shop!
+      </p>
+    </div>
+  </section>
+
+  <main id="servicios" class="services container">
+
+    <div class="services-txt">
+      <h1>Servicios</h1>
+      <hr>
+      <p>Ofrecemos una gama completa de servicios de cuidado personalizado para hombres.
+        Nuestro equipo de estilistas altamente capacitados está aquí para ayudarte a lograr el look que deseas.
+      </p>
+    </div>
+    <div class="services-group">
+
+      <div class="services-1">
+        <img src="tijera.jfif" alt="">
+        <h3>Cortes de cabello</h3>
+        <p>Nuestros estilistas son expertos en una variedad de estilos, desde clásicos
+          atemporales hasta cortes modernos y vanguardistas. Trabajaremos contigo para encontrar el corte que resalte tu
+          estilo y personalidad.</p>
+      </div>
+
+    </div>
+    <div class="services-group">
+
+      <div class="services-1">
+        <img src="tinte.jfif" alt="">
+        <h3>Tintes de cabello</h3>
+        <p>¿Quieres darle un nuevo color?
+          Ofrecemos servicios de tinte profesional para aquellos que buscan un cambio de estilo. Nuestros estilistas te
+          ayudarán a encontrar el color perfecto para usted.</p>
+      </div>
+
+    </div>
+    <div class="services-group">
+
+      <div class="services-1">
+        <img src="alisado.jfif" alt="">
+        <h3>Cuidado y tratamiento</h3>
+        <p>Nuestros tratamientos de cabello están diseñados
+          para mantener tu cabello saludable y vibrante. Desde tratamientos de hidratación hasta masajes de cuero
+          cabelludo,
+          nos preocupamos por la salud de tu cabello.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <section id="precios" class="prices container">
+    <div class="prices-1">
+      <h1>Lista de precios</h1>
+      <p>Los precios pueden variar según el estilista y la longitud del cabello. Si tienes alguna pregunta sobre los
+        precios o deseas obtener un presupuesto personalizado, no dudes en <a href="#contacto">contactarnos</a>.
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <th>Corte</th>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <th>Tinte</th>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <th>Alisado</th>
+            <td>$800</td>
+          </tr>
+          <tr>
+            <th>Corte a domicilio</th>
+            <td>$1800</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prices-2"></div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <form class="formulario" action="#contacto.php" method="POST">
+      <h2 style="color: #FFFF;">Reserve su turno</h2>
+      <div class="campo-1">
+        <input class="campo" type="text" placeholder="Nombre">
+        <input class="campo" type="number" placeholder="Telefono">
+      </div>
+      <div class="campo-1">
+        <input class="campo" type="text" placeholder="Direccion">
+        <input type="email" class="campo" placeholder="Correo">
+      </div>
+      <textarea class="campo" cols="30" rows="10" placeholder="Texto"></textarea>
+      <input type="submit" value="Enviar" class="btn-1">
+    </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="foot-icons">
+        <ul>
+          <a href=""><img src="icons8-phone-50.png" alt="tel" class="fa-icons"></a>
+          <a href=""><img src="icons8-instagram-50.png" alt="instagram" class="fa-icons"></a>
+          <a href=""><img src="icons8-mail-50.png" alt="hotmail" class="fa-icons"></a>
+        </ul>
+      </div>
+      <div class="foot-txt">
+        <a href="tel:+">
+          <h2 style="color: #f9f9f9;">Telefono: </h2>
+        </a>
+        <a href="">
+          <h2 style="color: #f9f9f9;">Gmail: </h2>
+        </a>
+        <p>Derechos de autor &copy; 2023. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+  <!--
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <h1>Politica de privacidad</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem omnis sit delectus repsellendus, minima
+      alias eveniet! Aliquam consequatur corporis adipisci, debitis libero animi vel quod reprehenderit illum itaque
+      quo.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem omnis sit delectus repellendus, minima
+      alias eveniet! Aliquam consequatur corporis adipisci, debitis libero animi vel quod reprehenderit illum itaque
+      quo.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem omnis sit delectus repellendus, minima
+      alias eveniet! Aliquam consequatur corporis adipisci, debitis libero animi vel quod reprehenderit illum itaque
+      quo.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem omnis sit delectus repellendus, minima
+      alias eveniet! Aliquam consequatur corporis adipisci, debitis libero animi vel quod reprehenderit illum itaque
+      quo.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem omnis sit delectus repellendus, minima
+      alias eveniet! Aliquam consequatur corporis adipisci, debitis libero animi vel quod reprehenderit illum itaque
+      quo.
+     <a href="#" class="close-popup">Cerrar</a>
+    </div>
+  </div> 
+  <script src=""> 
+</script>-->
+  <script src="menu.js"></script>
+</body>
+
+</html>

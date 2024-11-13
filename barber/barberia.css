@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;900&display=swap');
+
+/*font-family: 'Bebas Neue', sans-serif;*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+ body{
+  font-family:'Poppins', sans-serif;
+  background-color: #1F1F1F;
+
+ }
+ .container{
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+ .header{
+  /*background-image: url(https://th.bing.com/th/id/R.746b06c61ebf7892556fe0c956f478ca?rik=rKLA1EB4naKPOg&riu=http%3a%2f%2fsevilla.abc.es%2fcontenidopromocionado%2fwp-content%2fuploads%2fsites%2f2%2f2018%2f09%2fportada-wp-barber.jpg&ehk=vcr%2ftFxUPCcYGD%2b8jpe55MQBT0H%2bz0r9U69sCHGEj3M%3d&risl=&pid=ImgRaw&r=0);*/
+  background-image: url(bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+ }
+
+ .menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+ }
+
+
+ .logo{
+  font-size: 24px;
+  color: #CF2D3A;
+  font-weight: 800;
+  text-transform: uppercase;
+ }
+ .menu .nav-bar ul li {
+  position: relative;
+  float: left;
+ }
+ .menu .nav-bar ul li a{
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFFFF;
+  display: block;
+ }
+ .menu .nav-bar ul li a:hover{
+  color: #CF2D3A;
+ }
+ #menu{
+  display: none;
+ }
+ .menu-icon{
+  width: 50px;
+ }
+ .menu label{
+  cursor: pointer;
+  display: none;
+ }
+ menu:hover {
+  background-color: #000000; /* Color de fondo negro al pasar el cursor */
+  animation: fadeIn 0.3s ease; /* Animación de entrada */
+}
+ .header-txt{
+  text-align: center;
+  margin-bottom: 45px;
+ }
+ .header-txt h1, span{
+  font-size: 110px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #CF2D3A;
+  margin-bottom: 15px;
+ }
+
+ .header-txt span{
+  font-size: 25px;
+ }
+.header-txt p{
+  color: #AFAFAF;
+  padding: 0 250px;
+  margin: 25px 0;
+}
+.btn-1{
+display: inline-block;
+padding: 11px 25px;
+background-color: #DB2E37;
+color: #FFFFFF;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 20px;
+font-family: 'Bebas Neue', cursive;
+margin: 25px 0;
+border: 0;
+}
+.btn-1:hover{
+  background-color: #7c171c;
+}
+.header-dir{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #7c171c;
+}
+.dir h3{
+  font-size: 18px;
+}
+
+.dir h2{
+  font-size: 22px;
+  color: #fbfafa;
+  text-transform: uppercase;
+}
+
+  .sobre-nosotros { 
+    padding: 20px;
+    display: flex;
+  }
+  .welcome-1{
+    background-image: url(https://th.bing.com/th/id/OIP.XYHmX8oQ2WsKsj0lBaylTQHaJQ?pid=ImgDet&w=207&h=257&c=7&dpr=1,3);   /*en caso de agregar una imagen (opcional*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+  }
+  .welcome-2{
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: #000000;
+  }
+   h1 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+  }
+  
+ p {
+    color: #666;
+    font-size: 16px;
+    margin: 25px 0;
+  }
+.services{
+  padding: 100px 0;
+  text-align: center;
+}
+.services-txt{
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr{
+  border: 1px solid #CF2D3A;
+  width: 80px;
+}
+.services-txt p{
+  padding: 50px 150px;
+}
+.services-group{
+  align-items:center;
+  display: inline-block;
+  justify-content: space-between;
+  margin: 45px 0;
+}
+.services-1{
+  background-color: #070707;
+  padding: 35px 25px;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+.services-1 img{
+  width: 100px;
+  margin-bottom: 15px;
+}
+.services-1 h3{
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.services-1:hover{
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.prices{
+  display: flex;
+}
+.prices-1{
+  width: 50%;
+  padding: 150px 250px 150px 100px;
+  background-color: #191919;
+}
+table{
+  margin: 50px 0;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+tr{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #AFAFAF;
+  margin-bottom: 20px;
+}
+tr:hover{
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+th{
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+td{
+  color: #CF2D3A;
+}
+
+
+.prices-2{
+  background-image: url(a2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+  .contacto {
+   background-image: url(https://th.bing.com/th/id/R.77f9724cdb28c9b1e2e2ebc20da65a88?rik=aNv2S6b7EUXZjg&riu=http%3a%2f%2fwww.barbearia418.com.br%2fwp-content%2fuploads%2f2019%2f06%2fbarbearia-home-1024x548.png&ehk=r0hLlP2sseIFBcxMoETCKhY916Tr2MJb04o45jNMf5A%3d&risl=&pid=ImgRaw&r=0);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   align-items: center;
+   padding: 100px 0;
+   margin-top: 20px;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #070707;
+    border: 4px solid #CF2D3A;
+    outline: none;
+    border-radius: 10px;
+    width: 900px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .campo-1{
+    margin-bottom: 15px;
+  }
+
+  .campo{
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #0e0e0e;
+    border: 1px solid #CF2D3A;
+    outline: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+
+  textarea{
+    width: 520px !important;
+  }
+
+
+  
+  .footer {
+    background-color: #530b0f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-top:#333;
+    box-shadow:  #111;
+    margin-top: 0;
+  }
+  .foot-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .foot-icons a img{
+    height: 50px;
+    width: 50px;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-popup {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
+    text-decoration:none ;
+}
+.close-popup:hover{
+  color: #530b0f;
+}
+
+
+
+  
+  @media (max-width: 991px) {
+    .menu{
+      padding: 20px;
+    }
+    .menu label{
+      display: initial;
+    }
+    .menu .nav-bar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #1F1F1F;
+      display: none;
+    }
+    .menu .nav-bar ul li{
+      width: 100%;
+    }
+    #menu:checked ~ .nav-bar{
+      display: initial;
+    }
+
+    .header{
+      min-height: 0vh;
+    }
+    .header-content{
+      padding: 80px 30px 50px 30px;
+    }
+    .header-txt{
+      margin-bottom:15px ;
+    }
+    .header-txt{
+      font-size: 90px;
+    }
+    .header-txt p{
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    .header-dir{
+      flex-direction: column;
+    }
+    .dir p{
+      font-size: 18px;
+    }
+    .sobre-nosotros{
+      flex-direction: column;
+    }
+    .welcome-1{
+      display: none;
+    }
+    .welcome-2{
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+    }
+    h2{
+      font-size: 70px;
+      line-height: 80px;
+    }
+    p{
+      margin: 15px 0;
+    }
+
+    .services{
+      padding: 30px;
+    }
+    .services-txt p{
+      padding: 0;
+    }
+
+    .services-group{
+      flex-direction: column;
+      margin: 0;
+    }
+    .services-1{
+      margin: 0 0 20px 0;
+    }
+    .prices{
+      flex-direction: column;
+    }
+    .prices-1{
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+    }
+    table{
+      margin: 25px 0 0 0;
+    }
+    .prices-2{
+      display: none;
+    }
+
+    .contacto{
+      padding: 30px;
+    }
+    textarea{
+      width: 200px !important;
+    }
+    .formulario{
+      padding: 30px;
+      width: 450px; ;
+    }
+    .foot-txt{
+      display: none;
+    }
+    .popup-overlay{
+      height: 70%;
+    }
+    /* Estilos para pantallas de escritorio con una anchura mínima de 1025px */
+  }
